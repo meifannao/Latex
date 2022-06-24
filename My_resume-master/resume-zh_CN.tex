@@ -1,0 +1,155 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\usepackage{framed}
+\usepackage{color}  % 改变背景颜色
+\definecolor{shadecolor}{rgb}{0.92,0.92,0.92} % 灰色
+
+\makeatletter
+\@namedef{ver@everypage.sty}{9999/99/99}
+\makeatother
+\usepackage{everypage-1x}
+\usepackage[contents=DRAFT, color=red, opacity=0.2]{background}
+\backgroundsetup{scale=0.4, angle=0, opacity = 0.5,  % 放缩  旋转  透明度
+contents = {\includegraphics[width=\paperwidth, height=\paperwidth, keepaspectratio] {time}}}  % 添加背景图片
+
+\usepackage{multirow}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\begin{tabular}{c c|l}
+
+\multirow[c]{3}{3.7in}[-0.05in]{\Huge\fangzheng 彭于晏}
+&  \multirow[c]{3}{0.7in}[0.28in]{ \includegraphics[width=0.7in]{time}}
+&  \phone{(+86) 18574791536} \\
+& &  \qq{(QQ) 1973355104} \\
+& &  \email{(mail) meifannao549@gmail.com}\\
+
+\end{tabular}
+ 
+\begin{shaded} 
+\section{\faGraduationCap \fangzheng \  教育背景}
+\datedsubsection{\textbf{xxxxx大学}}{2019 -- 至今}
+
+\textit{-学院：计算机科学与工程学院}\\
+\textit{-专业：计算机科学与技术(卓)}\\
+\textit{-绩点：\textup{4.18}}\\
+\textit{-排名：\textup{3} / \textup{37}}\\
+\textit{-主修课程：计算机网络(卓)：\textup{97}，操作系统：\textup{98}，数据结构：\textup{97}}\\
+\textit{\hspace*{1.2cm} \qquad \textup{C}语言程序设计：\textup{98}，面向对象程序设计：\textup{98}}
+
+
+%\datedsubsection{\textbf{xxx大学} （xx-xx）}{2014 -- 2018}
+%\textit{本科}\ --- xxx
+\end{shaded}
+
+\section{\faUsers \fangzheng \ 科研/兴趣}
+%\datedsubsection{\textbf{竞赛经历}}{2019年 -- 至今}
+%\role{获奖}
+%
+%国奖
+%\begin{itemize}
+%  \item 团体程序设计天梯赛获得个人国家三等奖
+%  \item 团体程序设计天梯赛获得团体国家三等奖
+%\end{itemize}
+%
+%省奖
+%\begin{itemize}
+%	\item 蓝桥杯程序设计大赛获得个人省赛一等奖
+%	\item 高教社全国数学建模大赛省赛二等奖
+%	\item 团体程序设计天梯赛获得团体省赛二等奖
+%\end{itemize}
+%校赛
+%\begin{itemize}
+%	\item ACM-ICPC程序设计校赛获得校赛一等奖
+%	\item 数学建模校赛选拔赛二等奖
+%\end{itemize}
+
+\datedsubsection{\textbf{小项目}}{2020年9月 -- 至今}
+\role{C++, Java, python}{个人项目}
+\begin{onehalfspacing}
+项目详细内容在请查看Github主页 \href{https://github.com/meifannao}{https://github.com/meifannao}
+\begin{itemize}
+  \item 基于拓扑排序的教学计划编制问题
+  \item 基于Android Studio开发的安卓推箱子小游戏
+  \item 基于Packer Tracer的网络拓扑设计
+  \item 使用\LaTeX 制作的个人简历模板
+  \item OpenVINO部署加速视频人像分割模型
+  
+\end{itemize}
+\end{onehalfspacing}
+
+%\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
+%\role{\LaTeX, Python}{个人项目}
+%\begin{onehalfspacing}
+%优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+%\begin{itemize}
+%  \item 容易定制和扩展
+%  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
+%  \item 支持 FontAwesome 4.5.0
+%\end{itemize}
+%\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+
+\section{\faHeart \fangzheng \ 获奖情况}
+\textbf{国赛：}
+\datedline{\textit{三等奖}, 团体程序设计天梯赛个人赛}{2021 年\hspace*{0.195cm} 4 月}
+\datedline{\textit{三等奖}, 团体程序设计天梯赛团体赛}{2021 年\hspace*{0.195cm} 4 月}
+\textbf{省赛：}
+\datedline{\textit{一等奖}, 蓝桥杯程序设计大赛}{2021 年\hspace*{0.195cm} 4 月}
+\datedline{\textit{二等奖}, 高教社全国数学建模大赛}{2021 年\hspace*{0.195cm}  9 月}
+\datedline{\textit{二等奖}, 计算机设计大赛--物联网赛道}{ 2022 年\hspace*{0.195cm}   5 月}
+\datedline{\textit{三等奖}, 陕西省第九届ACM-ICPC大赛}{ 2022 年\hspace*{0.195cm}   5 月}
+\textbf{其他：}
+\datedline{\textit{奖学金}，蔚蓝奖学金}{2020 年12 月}
+\datedline{\textit{荣誉称号}, 尚真笃学学习先进个人}{2021 年12 月}
+\datedline{\textit{五四评优}, 优秀共青团团员}{2021 年\hspace*{0.195cm} 4 月}
+\datedline{\textit{社会实践}, "三下乡"社会实践优秀论文}{2021 年\hspace*{0.195cm} 12 月}
+\datedline{\textit{科技竞赛}, 创新成果奖一等奖}{2022 年\hspace*{0.195cm} 5 月}
+\datedline{\textit{社团活动}, 迎新晚会"优秀演员"}{2019 年\hspace*{0.195cm} 9 月}
+
+\section{\faCogs \fangzheng \ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C++, Python, C, Java
+  \item 辅助软件: \LaTeX,cmake,Makedown
+  \item 工具: git,visio，Tikz
+\end{itemize}
+
+\section{\faInfo \fangzheng \ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item  GitHub: \href{https://github.com/meifannao}{https://github.com/meifannao}
+\end{itemize}
+
+%\section{\faInfo \fangzheng \ 自我评价}
+%
+%\begin{itemize}
+%	\item 较强的自学能力，扎实的数学基础，较强的逻辑思维能力
+%	\item 较强的动手实践能力，课程设计均为优秀，担任ACM校队队长，编程能力较好
+%	\item 善于与人交流，参加迎新晚会获得优秀演员称号，获得优秀共青团员称号
+%\end{itemize}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
